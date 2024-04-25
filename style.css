@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#indian-flag:hover+.Extra-Text {
+  opacity: 100;
+  z-index: 150;
+}
+
+.Extra-Text {
+  position: absolute;
+  text-align: center;
+  right: -90px;
+  top: 25px;
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+  width: 250px;
+  border: 2px solid #000000;
+  padding: 10px;
+  font-size: 16px; 
+  opacity: 0;
+}
+
+/* featurecard -> line no 228 */
+/* featurecardIcon -> line no 230 */
+/* featurecardBox -> line no 253 */ 
+/* featurecard2 -> line no 637 */
+
+.featureCard:hover .featureCardIcon {
+  background-image: linear-gradient(30.55deg, #6ac7ff 11.05%, #148aff 90.09%);
+  box-shadow: 0px 2px 22px rgb(202 202 202 / 25%);
+}
+
+.featureCard:hover .featureCardSVG {
+  filter: drop-shadow(0px 2px 22px rgba(202, 202, 202, 0.25));
+  stroke-opacity: 0 !important;
+}
+
+.featureCard:hover .featureCardBox {
+  background-image: url('/images/features-wave.svg');
+  background-repeat: no-repeat;
+  background-position: bottom 1rem right;
+}
+
+.feature2bg {
+  background-image: url('/images/feature-section-2BG.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.featureCard2:hover .featureCardBox {
+  background-image: url('/images/features2-wave.svg');
+  background-repeat: no-repeat;
+  background-position: bottom 1rem right;
+}
+
+.featureCard2:hover .featureCardSVG {
+  filter: drop-shadow(0px 2px 24px rgba(0, 0, 0, 0.4));
+  stroke-opacity: 0 !important;
+}
+
+.featureCard2:hover .featureCardIcon {
+  background-image: linear-gradient(188.57deg, #2095ff -16.05%, #6416ff 116.32%);
+  box-shadow: 0px 2px 24px rgb(0 0 0 / 40%);
+  transition: all 200ms ease-in-out;
+}
+
+.bgcard1 {
+  background-image: url('/images/instant-settlement-bg.svg');
+  box-shadow: 0px 2px 22px rgb(202 202 202 / 25%);
+
+}
+
+.bgcard1:hover {
+  background-image: url('/images/instant-settlement-bghover.svg');
+}
+
+.bgcard2 {
+  background-image: url('/images/upi-autopay-bg.svg');
+  box-shadow: 0px 2px 22px rgb(202 202 202 / 25%);
+
+}
+
+.bgcard2:hover {
+  background-image: url('/images/upi-autopay-hoverbg.svg');
+}
+
+.bgcard3 {
+  background-image: url('/images/magic-checkout-bg.svg');
+  box-shadow: 0px 2px 22px rgb(202 202 202 / 25%);
+
+}
+
+.bgcard3:hover {
+  background-image: url('/images/magic-checkout-hoverbg.svg');
+}
+
+.bgcard4 {
+  background-image: url('/images/payment-button-bg.svg');
+  box-shadow: 0px 2px 22px rgb(202 202 202 / 25%);
+
+}
+
+.bgcard4:hover {
+  background-image: url('/images/payment-button-hoverbg.svg');
+}
+
+.bgcard5 {
+  background-image: url('/images/instantsettlement-bg.svg');
+  box-shadow: 0px 2px 22px rgb(202 202 202 / 25%);
+
+}
+
+.bgcard5:hover {
+  background-image: url('/images/instantsettlement-hoverbg.svg');
+}
+
+.corefeaturesection {
+  background-image: url('/images/core-features-sectionBg.svg');
+  /* background-size: 1500px 90%; */
+  background-size: 100% 100%;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
+.ctaSection{
+  background-size: 100% 100%;
+}
+
+.companiesList {
+  animation: 30s infinite linear companiesAnimation;
+}
+
+@keyframes companiesAnimation {
+  0% {
+    top: 0;
+  }
+
+  100% {
+    top: -50%;
+  }
+}
+
+
+.bgcta {
+  background-image: url(/img/CTABg.svg);
+  background-size: cover;
+  /* background-size: 100% 100%; */
+  padding-bottom: 2rem;
+}
+
+@media (max-width:768px) {
+  .a {
+    display: relative;
+    left: 8;
+    margin-top: 1;
+  }
+
+  .b {
+    display: relative;
+    left: 8;
+    margin-top: 1;
+  }
+
+  .c {
+    display: relative;
+    left: 22px;
+    margin-top: 8px;
+  }
+}
